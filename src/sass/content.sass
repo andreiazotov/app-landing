@@ -158,3 +158,108 @@
     float: right
     margin-top: 110px
     background: url(../img/mackbook.png) no-repeat 0 0
+
+.b-difference
+  padding: 144px 0 120px 0
+  background-color: #f0f0f0
+  &__heading
+    color: #2d394c
+    text-transform: uppercase
+    font-size: em(40)
+    text-align: center
+  &__slider
+    .b-slider
+      &__item
+        display: none
+      &__item_active
+        display: block
+      .b-item
+        &__heading
+          font-size: em(28)
+          color: #2d394c
+          margin-left: 88px
+        &__description
+          font-family: "UbuntuLight"
+          color: #5a626e
+          width: 725px
+
+.b-signup
+  padding: 124px 0 120px 0
+  border-bottom: 1px solid rgba(#5a626e, 0.11)
+  &__heading
+    color: #2d394c
+    text-transform: uppercase
+    font-size: em(40)
+    text-align: center
+  &__underheading-text
+    font-size: em(24)
+    font-family: "UbuntuLightItalic"
+    text-align: center
+    color: #5a626e
+    margin: 21px 0 55px 0
+  &__signup-form
+    text-align: center
+    .b-signup-form
+      &__input-email
+        display: inline-block
+        font-family: "UbuntuLight"
+        font-size: em(21)
+        color: rgba(#5a626e, 0.28)
+        padding: 23px 0 23px 80px
+        margin-right: 35px
+        width: 630px
+        border: 1px solid rgba(0, 0, 0, 0.1)
+        border-radius: 2px
+      &__input-submit
+        display: inline-block
+        background-color: #77c344
+        color: #fff
+        font-size: em(20)
+        text-transform: uppercase
+        padding: 23px 57px
+        border-radius: 3px
+        border: none
+
+.b-footer
+  background-color: #f2f2f2
+  overflow: hidden
+  padding: 56px 130px
+  &__logo
+    float: left
+    width: 179px
+    height: 27px
+    background: url(../img/bottom-logo.png) no-repeat 0 0
+  &__menu,
+  &__links
+    float: right
+  &__menu
+    .b-menu
+      border-right: 1px solid rgba(#777, 0.29)
+      &__item
+        display: inline-block
+        margin-right: 40px
+        &:last-child
+          margin-right: 17px
+        a
+          text-decoration: none
+          text-transform: uppercase
+          font-size: em(14)
+          color: #4d5664
+  &__links
+    .b-links
+      &__item
+        margin-left: 25px
+        display: inline-block
+        vertical-align: middle
+      &__item.tw
+        width: 20px
+        height: 18px
+        background: url(../img/twitter.png)
+      &__item.fb
+        width: 12px
+        height: 22px
+        background: url(../img/facebook.png)
+      &__item.gp
+        width: 20px
+        height: 22px
+        background: url(../img/gplus.png)
