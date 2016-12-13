@@ -1,1 +1,99 @@
 /* from content.sass */
+.b-banner
+  padding: 240px 0 255px 161px
+  background-image: linear-gradient(to bottom, #64a7d6, #5da1cf)
+  position: relative
+  &-left
+    width: 576px
+    &__heading
+      font-size: em(52)
+      font-family: "UbuntuBold"
+      text-transform: uppercase
+      color: #f7f6f2
+      line-height: 70px
+    &__underheading-text
+      font-family: "UbuntuItalic"
+      font-size: em(24)
+      margin-top: 15px
+    &__signup-form
+      margin: 50px 0 0 0
+      .b-signup-form
+        &__label
+          color: #f7f7f7
+          display: block
+          margin-bottom: 35px
+          span
+            padding: 5px 9px
+            border-radius: 5px
+            font-family: "UbuntuBold"
+            text-transform: uppercase
+            background-color: #ffce54
+        &__input-email
+          display: block
+          width: 390px
+          font-size: em(18)
+          color: #bec2c8
+          font-family: "UbuntuLight"
+          text-transform: capitalize
+          padding: 15px 0 15px 30px
+          border: 1px solid rgba(255, 255, 255, 0.15)
+          border-radius: 5px
+          display: inline-block
+        &__input-submit
+          text-transform: uppercase
+          font-size: em(18)
+          padding: 15px 25px
+          background: #77c344
+          color: #fff
+          border: none
+          border-radius: 5px
+          display: inline-block
+          margin-left: 35px
+  &__hand-with-phone
+    position: absolute
+    right: 0
+    top: 101px
+    width: 704px
+    height: 1000px
+    background: url(../img/hand-with-iphone.png) no-repeat 0 0
+    img
+      position: absolute
+
+.b-clients
+  padding: 65px 0 47px 0
+  text-align: center
+  background-color: #f8f8f8
+  position: relative
+  z-index: 1
+  &__items
+    .b-clients-items
+      &__item
+        display: inline-block
+        margin-right: 120px
+        vertical-align: middle
+        transition: 0.5s
+        cursor: pointer
+        &:hover
+          opacity: 0.47
+        &:last-child
+          margin-right: 0
+      .evernote
+        width: 169px
+        height: 43px
+        background: url(../img/evernote.png)
+      .microsoft
+        width: 142px
+        height: 31px
+        background: url(../img/microsoft.png)
+      .google
+        width: 131px
+        height: 46px
+        background: url(../img/google.png)
+      .sony
+        width: 132px
+        height: 23px
+        background: url(../img/sony.png)
+      .firefox
+        width: 112px
+        height: 33px
+        background: url(../img/firefox.png)

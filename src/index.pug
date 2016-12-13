@@ -8,37 +8,41 @@ html(lang='en')
     meta(name='author', content='Your page author')
     title Your Title
     link(href="css/styles.css", rel="stylesheet")
-    link(rel="shortcut icon" href="images/favicon.ico" type="image/x-icon")
+    link(rel="shortcut icon" href="img/favicon.ico" type="image/x-icon")
     <![if lt IE 9]>
       script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js")
     <![endif]-->
     script(src="js/script.js")
   body
-    .b-page-wrapper
+    .page-wrapper
       header.b-page-header
         .b-page-header__logo
-        ul.b-menu
-          li.b-menu__item: a(href="#") how it works
-          li.b-menu__item: a(href="#") about us
-          li.b-menu__item: a(href="#") contact us
-          li.b-menu__item: a(href="#") blog
+        .b-page-header__menu
+          ul.b-menu
+            li.b-menu__item: a(href="#") how it works
+            li.b-menu__item: a(href="#") about us
+            li.b-menu__item: a(href="#") contact us
+            li.b-menu__item: a(href="#") blog
       section.b-banner
         .b-banner-left
           h2.b-banner-left__heading track your next fuel shops
           .b-banner-left__underheading-text Monitor and Alert all petrol bunks near to you
-          b.b-banner-left__signup-form
+          .b-banner-left__signup-form
             form(action="#" method="post").b-signup-form
               label(for="signup-form__input-email").b-signup-form__label
-              ipnut(type="mail" placeholder="your e-mail address" name="signup-form__input-email")#signup-form__input-email.b-signup-form__input-email
-              ipnut(type="submit" value="signup").b-signup-form__input-submit
+                | Signup for
+                span free
+              input(type="mail" placeholder="your e-mail address" name="signup-form__input-email")#signup-form__input-email.b-signup-form__input-email
+              input(type="submit" value="signup").b-signup-form__input-submit
         .b-banner__hand-with-phone
       section.b-clients
-        ul.b-clients-items
-          li.b-clients-items__item.evernote: a(href="#")
-          li.b-clients-items__item.microsoft: a(href="#")
-          li.b-clients-items__item.google: a(href="#")
-          li.b-clients-items__item.sony: a(href="#")
-          li.b-clients-items__item.firefox: a(href="#")
+        .b-clients__items
+          ul.b-clients-items
+            li.b-clients-items__item.evernote: a(href="#")
+            li.b-clients-items__item.microsoft: a(href="#")
+            li.b-clients-items__item.google: a(href="#")
+            li.b-clients-items__item.sony: a(href="#")
+            li.b-clients-items__item.firefox: a(href="#")
       section.b-about-us
         h2.b-about-us__heading why tank app?
         .b-about-us__advantages
