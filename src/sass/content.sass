@@ -97,3 +97,64 @@
         width: 112px
         height: 33px
         background: url(../img/firefox.png)
+
+.b-about-us
+  padding: 100px 0 120px 0
+  overflow: hidden
+  &__heading
+    color: #2d394c
+    text-transform: uppercase
+    font-size: em(40)
+    text-align: center
+  &__advantages
+    display: inline-block
+    margin-left: 148px
+    margin-top: 110px
+    .b-advantages
+      width: 482px
+      &__item
+        position: relative
+        .item-1::after,
+        .item-2::after,
+        .item-3::after,
+        .item-4::after
+          position: absolute
+          content: ""
+          width: 55px
+          height: 55px
+          background-color: transparent
+        .item-1::after
+          background: url(../img/advantages-item-1.png) no-repeat 0 0
+          left: -10px
+          top: 0
+        .item-2::after
+          background: url(../img/advantages-item-2.png) no-repeat 0 0
+          left: -20px
+          top: -10px
+        .item-3::after
+          background: url(../img/advantages-item-3.png) no-repeat 0 0
+          left: -15px
+          top: 0
+        .item-4::after
+          background: url(../img/advantages-item-4.png) no-repeat 0 0
+          left: -10px
+          top: -15px
+        .b-item
+          position: relative
+          margin-bottom: 31px
+          &__heading
+            color: #2d394c
+            font-size: em(22)
+            margin-left: 60px
+            margin-bottom: 14px
+          &__description
+            font-family: "UbuntuLight"
+            font-size: em(14)
+            color: #9499a2
+  &__notebook
+    display: inline-block
+    width: 755px
+    height: 631px
+    float: right
+    margin-top: 110px
+    background: url(../img/mackbook.png) no-repeat 0 0
