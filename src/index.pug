@@ -16,7 +16,7 @@ html(lang='en')
   body
     .page-wrapper
       header.b-page-header
-        .b-page-header__logo
+        a(href="#").b-page-header__logo
         .b-page-header__menu
           ul.b-menu
             li.b-menu__item: a(href="#") how it works
@@ -37,12 +37,12 @@ html(lang='en')
         .b-banner__hand-with-phone
       section.b-clients
         .b-clients__items
-          ul.b-clients-items
-            li.b-clients-items__item.evernote: a(href="#")
-            li.b-clients-items__item.microsoft: a(href="#")
-            li.b-clients-items__item.google: a(href="#")
-            li.b-clients-items__item.sony: a(href="#")
-            li.b-clients-items__item.firefox: a(href="#")
+          .b-clients-items
+            a(href="#").b-clients-items__item.evernote
+            a(href="#").b-clients-items__item.microsoft
+            a(href="#").b-clients-items__item.google
+            a(href="#").b-clients-items__item.sony
+            a(href="#").b-clients-items__item.firefox
       section.b-about-us
         h2.b-about-us__heading why tank app ?
         .b-about-us__advantages
@@ -127,10 +127,11 @@ html(lang='en')
         p.b-signup__underheading-text Using our cloud Monitoring Services So you can Focous on Runing Yours Better
         .b-signup__signup-form
           form(action="#" method="post").b-signup-form
+            label.b-signup-form__label
             input(type="mail" placeholder="Enter Your E-mail Adress" name="signup-form__input-email").b-signup-form__input-email
             input(type="submit" value="signup").b-signup-form__input-submit
       section.b-footer
-        .b-footer__logo
+        a(href="#").b-footer__logo
         .b-footer__links
           .b-links
             a(href="#").b-links__item.tw

@@ -1,1 +1,53 @@
 /* from footer.sass */
+.b-footer
+  background-color: #f2f2f2
+  overflow: hidden
+  padding: 56px 130px
+  &__logo
+    float: left
+    width: 179px
+    height: 27px
+    background: url(../img/bottom-logo.png) no-repeat 0 0
+    transition: 0.2s
+    &:hover
+      opacity: 0.8
+  &__menu,
+  &__links
+    float: right
+  &__menu
+    .b-menu
+      border-right: 1px solid rgba(#777, 0.29)
+      &__item
+        display: inline-block
+        margin-right: 40px
+        &:last-child
+          margin-right: 17px
+        a
+          text-decoration: none
+          text-transform: uppercase
+          font-size: em(14)
+          color: #4d5664
+          transition: 0.4s
+          &:hover
+            opacity: 0.6
+  &__links
+    .b-links
+      &__item
+        margin-left: 25px
+        display: inline-block
+        vertical-align: middle
+        transition: 0.4s
+        &:hover
+          opacity: 0.6
+      &__item.tw
+        width: 20px
+        height: 18px
+        background: url(../img/twitter.png)
+      &__item.fb
+        width: 12px
+        height: 22px
+        background: url(../img/facebook.png)
+      &__item.gp
+        width: 20px
+        height: 22px
+        background: url(../img/gplus.png)

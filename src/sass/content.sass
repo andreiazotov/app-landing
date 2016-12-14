@@ -5,6 +5,20 @@
   position: relative
   &-left
     width: 576px
+    position: relative
+    &::after,
+    &::before
+      position: absolute
+      content: ""
+      width: 50px
+      height: 30px
+      left: -50px
+      top: -70px
+      background: url(../img/cloud-1.png) no-repeat 50% 50%
+    &::after
+      left: -15px
+      top: 490px
+      background: url(../img/cloud-2.png) no-repeat 50% 50%
     &__heading
       font-size: em(52)
       font-family: "UbuntuBold"
@@ -19,6 +33,7 @@
       margin: 50px 0 0 0
       .b-signup-form
         &__label
+          cursor: pointer
           color: #f7f7f7
           display: block
           margin-bottom: 35px
@@ -28,6 +43,7 @@
             font-family: "UbuntuBold"
             text-transform: uppercase
             background-color: #ffce54
+            margin-left: 5px
         &__input-email
           display: block
           width: 390px
@@ -49,6 +65,10 @@
           border-radius: 5px
           display: inline-block
           margin-left: 35px
+          cursor: pointer
+          transition: 0.4s
+          &:hover
+            background-color: #ffce54
   &__hand-with-phone
     position: absolute
     right: 0
@@ -58,6 +78,19 @@
     background: url(../img/hand-with-iphone.png) no-repeat 0 0
     img
       position: absolute
+    &::after,
+    &::before
+      position: absolute
+      content: ""
+      width: 50px
+      height: 30px
+      right: 265px
+      top: 125px
+      background: url(../img/cloud-1.png) no-repeat 50% 50%
+    &::after
+      right: 150px
+      top: 610px
+      opacity: 0.33
 
 .b-clients
   padding: 65px 0 47px 0
@@ -114,6 +147,7 @@
       width: 482px
       &__item
         position: relative
+        margin-bottom: 50px
         .item-1::after,
         .item-2::after,
         .item-3::after,
@@ -161,7 +195,8 @@
 
 .b-difference
   padding: 144px 0 120px 0
-  background-color: #f0f0f0
+  background: #f6f6f7 url("../img/rectangle-5.png") no-repeat 100% 0
+  background-size: auto 100%
   &__heading
     color: #2d394c
     text-transform: uppercase
@@ -174,14 +209,44 @@
       &__item_active
         display: block
       .b-item
+        margin: 140px 0 0 124px
         &__heading
           font-size: em(28)
           color: #2d394c
           margin-left: 88px
+          position: relative
+          &::after
+            position: absolute
+            content: ""
+            width: 63px
+            height: 42px
+            background: url(../img/slider-item-1.png)
+            left: -90px
+            top: 0
         &__description
+          margin-top: 25px
           font-family: "UbuntuLight"
           color: #5a626e
           width: 725px
+          line-height: 2
+      &__nav
+        text-align: center
+        margin-top: 35px
+        .b-nav
+          display: inline-block
+          &__item
+            display: inline-block
+            cursor: pointer
+            color: #2d394c
+            opacity: 0.27
+            font-size: em(15)
+            padding: 0 8px
+            border-radius: 50%
+            margin-right: 5px
+          &__item_active
+            opacity: 1
+            background-color: #64a4d7
+            color: #fff
 
 .b-signup
   padding: 124px 0 120px 0
@@ -199,7 +264,16 @@
     margin: 21px 0 55px 0
   &__signup-form
     text-align: center
+    position: relative
     .b-signup-form
+      &__label
+        position: absolute
+        content: ""
+        left: 483px
+        top: 24px
+        width: 30px
+        height: 24px
+        background: url(../img/signup-form-img.png) no-repeat 0 0
       &__input-email
         display: inline-block
         font-family: "UbuntuLight"
@@ -219,47 +293,7 @@
         padding: 23px 57px
         border-radius: 3px
         border: none
-
-.b-footer
-  background-color: #f2f2f2
-  overflow: hidden
-  padding: 56px 130px
-  &__logo
-    float: left
-    width: 179px
-    height: 27px
-    background: url(../img/bottom-logo.png) no-repeat 0 0
-  &__menu,
-  &__links
-    float: right
-  &__menu
-    .b-menu
-      border-right: 1px solid rgba(#777, 0.29)
-      &__item
-        display: inline-block
-        margin-right: 40px
-        &:last-child
-          margin-right: 17px
-        a
-          text-decoration: none
-          text-transform: uppercase
-          font-size: em(14)
-          color: #4d5664
-  &__links
-    .b-links
-      &__item
-        margin-left: 25px
-        display: inline-block
-        vertical-align: middle
-      &__item.tw
-        width: 20px
-        height: 18px
-        background: url(../img/twitter.png)
-      &__item.fb
-        width: 12px
-        height: 22px
-        background: url(../img/facebook.png)
-      &__item.gp
-        width: 20px
-        height: 22px
-        background: url(../img/gplus.png)
+        cursor: pointer
+        transition: 0.4s
+        &:hover
+          background-color: #ffce54
