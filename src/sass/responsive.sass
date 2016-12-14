@@ -1,1 +1,206 @@
 /* from responsive.sass */
+@media screen and (max-width: 1425px)
+  .b-banner
+    padding: 240px 0 255px 50px
+    overflow: hidden
+    &__hand-with-phone
+      right: -150px
+
+@media screen and (max-width: 1390px)
+  .b-about-us
+    &__advantages
+      margin-left: 80px
+    &__notebook
+      height: 500px
+      width: 625px
+
+@media screen and (max-width: 1190px)
+  .b-banner
+    &__hand-with-phone
+      top: 226px
+      width: 554px
+      height: 850px
+      &::before
+        right: 160px
+      &::after
+        right: 480px
+  .b-about-us
+    &__advantages
+      margin-left: 50px
+    &__notebook
+      height: 400px
+      width: 525px
+  .b-clients
+    &__items
+      .b-clients-items
+        &__item
+          margin-right: 60px
+
+@media screen and (max-width: 1060px)
+  .b-banner
+    &__hand-with-phone
+      top: 276px
+      width: 524px
+      height: 800px
+      &::before
+        right: 160px
+      &::after
+        right: 480px
+  .b-about-us
+    &__advantages
+      margin-left: 50px
+    &__notebook
+      height: 300px
+      width: 425px
+  .b-clients
+    &__items
+      .b-clients-items
+        &__item
+          margin-right: 60px
+
+@media screen and (max-width: 1000px)
+  .b-banner
+    padding: 100px 0 100px 50px
+    &__hand-with-phone
+      top: 30px
+      width: 474px
+      height: 750px
+      &::before
+        right: 160px
+      &::after
+        right: 480px
+  .b-clients
+    &__items
+      .b-clients-items
+        &__item
+          margin-right: 40px
+  .b-footer
+    &__menu
+      .b-menu
+        &__item
+          margin-right: 20px
+
+@media screen and (max-width: 960px)
+  .b-page-header
+    padding: 28px 0
+    background-color: #fff
+    &__logo
+      float: none
+      display: block
+      margin: 0 auto 20px auto
+    &__menu
+      float: none
+      text-align: center
+  .b-banner
+    padding: 100px 0 100px 0
+    &-left
+      text-align: center
+      width: 100%
+    &__hand-with-phone
+      display: none
+  .b-clients
+    &__items
+      .b-clients-items
+        &__item
+          margin: 35px 40px 35px 0
+  .b-about-us
+    padding: 50px 0 50px
+    &__advantages
+      margin-left: 30px
+      margin-top: 50px
+      padding: 0 20px
+      .b-advantages
+        width: 100%
+    &__notebook
+      display: none
+  .b-signup
+    padding: 70px 0
+    &__signup-form
+      .b-signup-form
+        &__label
+          left: 24px
+          top: 24px
+        &__input-email
+          display: block
+          margin: 0 auto
+        &__input-submit
+          display: block
+          margin: 20px auto
+  .b-footer
+    &__menu
+      display: none
+
+@media screen and (max-width: 860px)
+  .b-difference
+    &__slider
+      .b-slider
+        .b-item
+          margin: 140px 20px 0
+          &__description
+            margin-top: 25px
+            font-family: "UbuntuLight"
+            color: #5a626e
+            width: 100%
+            line-height: 2
+  .b-signup
+    &__signup-form
+      .b-signup-form
+        &__input-email
+          width: 400px
+
+@media screen and (max-width: 600px)
+  .b-banner
+    &-left
+      &__signup-form
+        .b-signup-form
+          &__input-email
+            display: block
+            width: 400px
+            margin: 0 auto
+          &__input-submit
+            display: block
+            margin: 20px auto 0 auto
+  .b-footer
+    padding: 56px 30px
+
+@media screen and (max-width: 490px)
+  .b-page-header
+    &__menu
+      .b-menu
+        &__item
+          display: block
+          margin: 10px 0
+          text-align: center
+  .b-banner
+    &-left
+      &__signup-form
+        .b-signup-form
+          &__input-email
+            width: 270px
+  .b-clients
+    &__items
+      .b-clients-items
+        &__item
+          display: block
+          margin: 50px auto 0 auto
+          &:last-child
+            margin: 50px auto 0 auto
+  .b-signup
+    &__signup-form
+      .b-signup-form
+        &__input-email
+          width: 220px
+          font-size: em(16)
+  .b-footer
+    padding: 20px 0
+    text-align: center
+    &__logo,
+    &__links
+      float: none
+      display: block
+      margin: 0 auto 25px auto
+    .b-links
+      &__item
+        margin: 0 20px 0 0
+        &:last-child
+          margin-right: 0
